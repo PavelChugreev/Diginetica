@@ -1,0 +1,87 @@
+.main
+    display: flex
+    justify-content: space-between
+    padding: 40px 40px 0 40px
+    .filter
+        &-category
+            &__title
+                font-weight: bold
+            &__list
+                margin: 11px 0
+                .filter-category__item
+                    margin-top: 5px
+                    padding: 5px 0
+                    &:hover a
+                        color: #333333
+                        border-bottom: 1px solid #F1BD45
+                    a
+                        color: #5375B7
+                        
+                    &::after
+                        content: "(xxx)"
+                        color: #8B8B8B
+                        padding-left: 4px
+            &__additional
+                &:hover a
+                    color: #687efd
+                a
+                    color: #5375B7
+        &-price
+            padding-top: 40px
+            &__title
+                font-weight: bold
+            &__fields
+                margin-top: 16px
+                label, span
+                    font-size: 12px
+                    opacity: 0.5
+                input
+                    margin-left: 5px
+                    padding: 12px
+                    width: 90px
+                    outline: none
+                    border: 1px solid #DEDEDE
+                    border-radius: 3px
+            &__slider
+                margin-top: 19px
+                height: 5px
+            .ui-widget-content
+                background: #000
+                width: 290px
+            .ui-slider-range
+                background: #000
+            .ui-slider-handle
+                width: 12px
+                height: 12px
+                outline: none
+                border-radius: 100%
+                border: 2px solid #000
+                background: #fff
+        &-brands
+            position: relative
+            padding-top: 32px
+            &__title
+                display: inline-block
+                font-weight: bold
+            &__clear
+                position: absolute
+                right: 0
+                padding: 5px
+                font-size: 10px
+                color: #8B8B8B
+                text-decoration-line: underline
+                cursor: pointer
+            &__list
+                .filter-brands__item
+                    margin-top: 15px
+                    input
+                        margin: 0
+                        border: 1px solid #DEDEDE
+                        border-radius: 3px
+                    label
+                        opacity: 0.7
+                        margin-left: 8px
+                        &::after
+                            content: "(xxx)"
+                            color: #8B8B8B
+                            margin-left: 5px
