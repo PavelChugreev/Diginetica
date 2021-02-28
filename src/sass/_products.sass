@@ -1,14 +1,16 @@
 .main
     .products
-        min-width: 75%
-        margin-left: 42px
+        min-width: 60%
         &__top
             display: flex
             justify-content: space-between
+            flex-wrap: wrap
             .sort
+                display: flex
+                flex-wrap: wrap
                 padding: 5px 0
                 &__title
-                    display: inline-block
+                    padding: 7px 0 3px 0
                 a
                     padding: 7px 0 3px 0
                     margin-left: 15px
@@ -17,6 +19,8 @@
                         color: #333333
                         border-bottom: 1px solid #F1BD45
             .drop
+                padding-top: 8px
+                text-align: end
                 select
                     padding: 6px
                     outline: none
@@ -26,14 +30,58 @@
                         width: 20px
                         height: 15px
         &__options
+            display: flex
+            flex-wrap: wrap
             margin-top: 20px
-            a
+            .show-filter
+                display: none
+                svg
+                    width: 20px
+                    height: 17px
+            a, .show-filter
                 padding: 7px 15px
-                margin-right: 10px
+                margin: 0 10px 5px 0
                 color: #000
                 background-color: #FFF3D8
                 border-radius: 3px
                 &:hover
                     background-color: #ffe9b6
-
-
+                    cursor: pointer
+        &__list
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            margin-top: 30px
+            .product
+                margin-bottom: 40px
+                &__title
+                    width: 260px
+                    margin-top: 10px
+                &__price
+                    font-size: 16px
+                    font-weight: bold
+                    margin-top: 18px
+                    &::after
+                        content: "ХХ ХХХ $"
+                        margin-left: 16px
+                        font-size: 14px
+                        color: #A9A9A9
+                        text-decoration: line-through
+                &__btn
+                    margin-top: 15px
+                    padding: 12px 0
+                    width: 260px
+                    background: #F1BD45
+                    border-radius: 3px
+                    border: none
+                    outline: none
+                    &:hover
+                        cursor: pointer
+                        background: #facf6a
+        .numbers
+            li
+                display: inline
+                padding: 5px 10px
+                cursor: pointer
+                &:hover
+                    color: #5375B7

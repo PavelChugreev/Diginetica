@@ -8,9 +8,9 @@ export default function filters(){
                 item.classList.toggle("hidden");
             }
             if( i == categories.length - 1 && item.classList.contains("hidden")){
-                additionalBtn.innerText = "Еще 10 категорий..."
+                additionalBtn.innerText = "Еще 10 категорий...";
             } else {
-                additionalBtn.innerText = "Скрыть 10 категорий..."
+                additionalBtn.innerText = "Скрыть 10 категорий...";
             }
         });
     }
@@ -23,4 +23,11 @@ export default function filters(){
     clearBoxBtn.addEventListener("click", () => {
         checkBoxes.forEach(item => item.checked = false);
     });
+
+    const showFilterBtn = document.querySelector(".show-filter");
+    const closeFilterBtn = document.querySelector(".close-filter");
+    const filterBlock = document.querySelector(".filter");
+    
+    showFilterBtn.addEventListener("click", () => filterBlock.classList.toggle("show"));
+    closeFilterBtn.addEventListener("click", () => filterBlock.classList.remove("show"));
 }

@@ -1,0 +1,131 @@
+@media (max-width: 1200px)
+	.subheader
+		.title
+			&::after
+				top: 80px
+			&__main
+				font-size: 20px
+			&__sub
+				font-size: 12px
+
+@media (max-width: 991px)
+	.main
+		position: relative
+		.filter
+			position: absolute
+			top: 0
+			border: 1px solid #DEDEDE
+			border-radius: 3px
+			left: -150%
+			transition: 0.5s all
+			&-category
+				&__title
+					position: relative
+					.close-filter
+						position: absolute
+						right: -15px
+						top: -15px
+						display: inline
+						padding: 10px
+						cursor: pointer
+		.show
+			padding: 20px
+			left: 0
+			top: 0
+			background-color: #FFF3D8				
+		.products
+			&__options
+				.show-filter
+					display: block
+@media (max-width: 890px)
+	.main
+		.products
+			&__top 
+				.sort
+					display: block
+					a
+						margin: 0 15px 0 0
+						
+@media (max-width: 800px)
+	.subheader
+		.title
+			flex-wrap: wrap
+			&__sub
+				margin: 7px 0 0 0px
+
+@media (max-width: 768px)
+	*::-webkit-scrollbar
+		height: 0px
+	*
+		scrollbar-width: none
+
+@media (max-width: 631px)
+	.subheader
+		.search-form
+			display: block
+			&__field
+				display: block
+				width: 100%
+				input
+					border-radius: 5px
+			&__btn, &__close
+				margin-top: 5px
+				border-radius: 5px
+			&__close
+				margin-left: 3px
+	.main
+		.products
+			&__options
+				a
+					padding: 10px
+					font-size: 12px
+			&__list
+				justify-content: center
+				.product
+					padding: 0 20px
+
+@media (max-width: 500px)
+	.main
+		.products
+			&__top
+				.sort
+					a
+						display: block
+
+@media (max-width: 426px)
+	.header
+		padding: 20px 24px
+	.subheader
+		.title
+			padding-top: 15px
+			&::after
+				height: 75px
+		.search-form
+			&__btn, &__close
+				padding: 7px 20px
+				height: 34px
+		.nav
+			padding-top: 20px
+	.main
+		padding-top: 20px
+
+@media (max-width: 321px)
+	.subheader
+		.title
+			&::after
+				top: 93px
+	.main
+		.show
+			padding: 7px
+		.filter
+			min-width: 290px
+
+			&-category
+				&__title
+					.close-filter
+						right: -5px
+						top: -8px
+				&__list
+					.filter-category__item
+						a
+							font-size: 12px

@@ -9,7 +9,6 @@
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
-
     <title>Test task Diginetica</title>
 </head>
 <body>
@@ -79,7 +78,9 @@
     <section class="main">
         <section class="filter">
             <div class="filter-category" id="filter-category">
-                <div class="filter-category__title">Все категории</div>
+                <div class="filter-category__title">Все категории
+                    <span class="close-filter">X</span>
+                </div>
                 <ul class="filter-category__list">
                     <li class="filter-category__item"><a href="#">Категория в которой нашли что-то</a></li>
                     <li class="filter-category__item"><a href="#">Категория в которой нашли что-то</a></li>
@@ -131,8 +132,7 @@
                         <label for="brand3">Бренд</label>
                     </li>
 
-                </ul>
-                
+                </ul>   
             </div>
         </section>
         <section class="products" id="products">
@@ -153,12 +153,131 @@
                 </div>
             </div>
             <div class="products__options">
+                <div class="show-filter">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="filter" class="svg-inline--fa fa-filter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path></svg>
+                </div>
                 <a href="#products">Уточнение</a>
                 <a href="#products">Уточнение</a>
                 <a href="#products">Уточнение</a>
-                <a href="#products">Уточнение</a>
+                <a href="#products">Уточнение</a>  
             </div>
-
+            <div class="products__list">
+                <div class="product">
+                    <div class="product__img">
+                        <img src="./src/img/Rectangle 4.png" alt="">
+                    </div>
+                    <div class="product__title">Наименование товара, которое не более 2 строк
+                    </div>
+                    <div class="product__price">ХХ ХХХ , $</div>
+                    <button class="product__btn">Кнопка</button>
+                </div>
+                <div class="product">
+                    <div class="product__img">
+                        <img src="./src/img/Rectangle 4.png" alt="">
+                    </div>
+                    <div class="product__title">Наименование товара, которое не более 2 строк
+                    </div>
+                    <div class="product__price">ХХ ХХХ , $</div>
+                    <button class="product__btn">Кнопка</button>
+                </div>
+                <div class="product">
+                    <div class="product__img">
+                        <img src="./src/img/Rectangle 4.png" alt="">
+                    </div>
+                    <div class="product__title">Наименование товара, которое не более 2 строк
+                    </div>
+                    <div class="product__price">ХХ ХХХ , $</div>
+                    <button class="product__btn">Кнопка</button>
+                </div>
+                <div class="product">
+                    <div class="product__img">
+                        <img src="./src/img/Rectangle 4.png" alt="">
+                    </div>
+                    <div class="product__title">Наименование товара, которое не более 2 строк
+                    </div>
+                    <div class="product__price">ХХ ХХХ , $</div>
+                    <button class="product__btn">Кнопка</button>
+                </div>
+                <div class="product">
+                    <div class="product__img">
+                        <img src="./src/img/Rectangle 4.png" alt="">
+                    </div>
+                    <div class="product__title">Наименование товара, которое не более 2 строк
+                    </div>
+                    <div class="product__price">ХХ ХХХ , $</div>
+                    <button class="product__btn">Кнопка</button>
+                </div>
+                <div class="product">
+                    <div class="product__img">
+                        <img src="./src/img/Rectangle 4.png" alt="">
+                    </div>
+                    <div class="product__title">Наименование товара, которое не более 2 строк
+                    </div>
+                    <div class="product__price">ХХ ХХХ , $</div>
+                    <button class="product__btn">Кнопка</button>
+                </div>
+                <div class="product">
+                    <div class="product__img">
+                        <img src="./src/img/Rectangle 4.png" alt="">
+                    </div>
+                    <div class="product__title">Наименование товара, которое не более 2 строк
+                    </div>
+                    <div class="product__price">ХХ ХХХ , $</div>
+                    <button class="product__btn">Кнопка</button>
+                </div>
+                <div class="product">
+                    <div class="product__img">
+                        <img src="./src/img/Rectangle 4.png" alt="">
+                    </div>
+                    <div class="product__title">Наименование товара, которое не более 2 строк
+                    </div>
+                    <div class="product__price">ХХ ХХХ , $</div>
+                    <button class="product__btn">Кнопка</button>
+                </div>
+                <div class="product">
+                    <div class="product__img">
+                        <img src="./src/img/Rectangle 4.png" alt="">
+                    </div>
+                    <div class="product__title">Наименование товара, которое не более 2 строк
+                    </div>
+                    <div class="product__price">ХХ ХХХ , $</div>
+                    <button class="product__btn">Кнопка</button>
+                </div>
+                <div class="product">
+                    <div class="product__img">
+                        <img src="./src/img/Rectangle 4.png" alt="">
+                    </div>
+                    <div class="product__title">Наименование товара, которое не более 2 строк
+                    </div>
+                    <div class="product__price">ХХ ХХХ , $</div>
+                    <button class="product__btn">Кнопка</button>
+                </div>
+                <div class="product">
+                    <div class="product__img">
+                        <img src="./src/img/Rectangle 4.png" alt="">
+                    </div>
+                    <div class="product__title">Наименование товара, которое не более 2 строк
+                    </div>
+                    <div class="product__price">ХХ ХХХ , $</div>
+                    <button class="product__btn">Кнопка</button>
+                </div>
+                <div class="product">
+                    <div class="product__img">
+                        <img src="./src/img/Rectangle 4.png" alt="">
+                    </div>
+                    <div class="product__title">Наименование товара, которое не более 2 строк
+                    </div>
+                    <div class="product__price">ХХ ХХХ , $</div>
+                    <button class="product__btn">Кнопка</button>
+                </div>
+            </div>
+            <ul class="numbers">
+                <li>2</li>
+                <li>3</li>
+                <li>...</li>
+                <li>13</li>
+                <li>&#62</li>
+            </ul>
         </section>
     </section>
 
